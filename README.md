@@ -63,7 +63,7 @@ The Home screen displays the list of food items in a grid view, with each food i
 
 ## Learn More
 
-You can learn more about the app (https://github.com/parveet771/MyFirstFoodApp/README.md).
+You can learn more about the app (https://github.com/parveet771/firstapp.git).
 
 
 
