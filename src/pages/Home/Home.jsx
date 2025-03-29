@@ -10,7 +10,7 @@ import { StoreContext } from '../../context/StoreContext';
 
 
 const Home = () => {
-    const [category,setCategory]=useState("All");
+    const [category, setCategory] = useState("All");
     return (
         <div>
             <Header/>
@@ -19,7 +19,7 @@ const Home = () => {
             <FoodItem category = {category} setCategory = {setCategory}/>
             <Footer category = {category} setCategory = {setCategory}/>
             <AppDownload category = {category} setCategory = {setCategory}/>
-       <StoreContext category = {category} setCategory = {setCategory}/>
+            {/* <StoreContext category = {category} setCategory = {setCategory}/> */}
         </div>
     );
 };
