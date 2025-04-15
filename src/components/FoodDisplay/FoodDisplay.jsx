@@ -7,14 +7,15 @@ const FoodDisplay = ({ category }) => {
 
     const { food_list } = useContext(StoreContext);
 
-//debugger; console.log(food_list);
+debugger; console.log(food_list);
 
 return (
     <div className='food-display' id='food-display'>
         <h2>Top dishes near you</h2>
         <div className='food-display-list'>
-            {food_list.map((item, index) => {
-                console.log(category, item.category);
+            {food_list && food_list.map((item, index) => { 
+            // {food_list.map((item, index) => { 
+                //console.log(category, item.category);
                 if (category === "All" || category === item.category) {
                     // (<div key={index} className="food-item">
                     //     <h3>{item.name}</h3>
@@ -25,7 +26,6 @@ return (
                 name={item.name} description={item.description} price={item.price}
                 image={item.image} ></FoodItem>
                 }
-                 
 })}
             </div>
         </div>
