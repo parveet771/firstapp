@@ -8,9 +8,7 @@ import StoreContextProvider from '/FoodApp/MyFoodApp/src/context/StoreContext';
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   <StoreContextProvider>
-
-     <App />
-     
-     </StoreContextProvider>   
+     <App />     
+  </StoreContextProvider>   
   </BrowserRouter>,
 )

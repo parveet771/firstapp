@@ -16,8 +16,7 @@ const Home = () => {
             <ExploreMenu category = {category} setCategory = {setCategory}/>
             <FoodDisplay category = {category} setCategory = {setCategory}/>          
             <Footer category = {category} setCategory = {setCategory}/>
-            <AppDownload category = {category} setCategory = {setCategory}/>
-            {/* <StoreContext category = {category} setCategory = {setCategory}/> */}
+            <AppDownload category = {category} setCategory = {setCategory}/>           
         </div>
     );
 };
