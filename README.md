@@ -50,13 +50,13 @@ The Home screen displays the list of food items in a grid view, with each food i
 ## Screenshots
 
 ### Homepage
-![Home page](Images/main_img.png)
+![Home page](MyFoodApp/main_img.png)
 
 ![Alt Text](main_image.png)
 
 
 ### Order Page
-![Order Page](images/main_img.png)
+![Order Page](MyFoodApp/main_img.png)
 
 
 

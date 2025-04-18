@@ -10,17 +10,31 @@ const LoginPopup = ({ setShowLogin }) => {
 
     const [currState, setCurrState] = useState("Login");
 
+    const [data, setData] = useState({
+        email: "",
+        password: "",
+      });
+
     const onChangeHandler = (event) => {
         const name = event.target.name;
         const value = event.target.value;
-        setData(data => ({ ...data, [name]: value }))
+        setData((data) => ({ ...data, [name]: value }))
     }
 
     const onLogin = async (event) => {
         event.preventDefault();
+        //setLoading(true); setError("");
+        // const [data, setData] = useState({
+        //     email: "",
+        //     password: "",
+        //   });
+
         let newUrl = url;
         if (currState === "Login") {
             newUrl += "/api/user/login";
+        }
+        else if (currState === "Sign Up") {
+            newUrl += "/api/user/register";
         }
         else {
             newUrl += "/api/user/register";
@@ -51,7 +65,7 @@ const LoginPopup = ({ setShowLogin }) => {
                 <div className="login-popup-inputs">
                     {currState === "Login" ? <></> :
                     <input name='name' onChange={onChangeHandler} value={data.name} type="text" placeholder='Your name' required />}
-                    <input name='email' onChange={onChangeHandler} type="email" placeholder='Your email' required />
+                    <input name='email' onChange={onChangeHandler} value={data.email}  type="email" placeholder='Your email' required />
                     <input name='password' onChange={onChangeHandler} type="password" placeholder='Password' required />
                 </div>
 
